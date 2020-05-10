@@ -84,6 +84,7 @@ public class Homework5 {
                     default:
                         continue;
                 }
+                System.out.println("Изберете опция");
                 yourOption = Integer.parseInt(scanner.nextLine());
             }
 
