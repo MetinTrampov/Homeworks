@@ -15,15 +15,8 @@ public class Homework5 {
         int n = Integer.parseInt(scanner.nextLine());
         arrayOfNumbers = new int[n];
         System.out.printf("Въведете %d числа :\n ", n);
-      //  printUserChosenNumbers11(arrayOfNumbers);
-        for (int i = 0; i < arrayOfNumbers.length ; i++) {
-
-            arrayOfNumbers[i] = scanner.nextInt();
-
-            //  if (( array[0] <0 && array[0]>100)){
-            //    System.out.print("Опитай отново :");
-            //     break;
-        }
+        printUserChosenNumbers11(arrayOfNumbers);
+       
 
 
         printMenu();
