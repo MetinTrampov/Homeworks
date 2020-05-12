@@ -50,12 +50,13 @@ public class Homework5 {
         Random random = new Random();
         int template;
         for (int i = 0; i < array.length; i++) {
-            int pos = random.nextInt(array.length);
-            template = array[pos];
-            array[pos] = array[i];
-            array[i] = template;
+            int pos     = random.nextInt(array.length);
+            template    = array[pos];
+            array[pos]  = array[i];
+            array[i]    = template;
+            
             System.out.print(" "+template);
-
+            
         }System.out.println();
 
     }
@@ -145,8 +146,8 @@ public class Homework5 {
      */
        public  static int findIndexOfCurrentNumber(int [] array,int key){
         int sizeOfArray = array.length;
-        for (int i = 0; i <sizeOfArray ; i++) {
-            if(array[i]==key){
+        for (int i = 0  ; i < sizeOfArray ; i++) {
+            if(array[i] ==key){
                 return i;
             }else {
                 System.out.println("Няма такова число в вашия масив");
@@ -182,9 +183,9 @@ public class Homework5 {
      * @return Обърнатия масив
      */
      public static int[]   reversedArray10 (int [] array){
-        int[] reversed= new int [array.length];
-        for (int i = 0, j = reversed.length - 1 ; i < array.length ; i++,j--){
-                  reversed[j] = array[i];
+        int[] reversed      = new int [array.length];
+        for (int i = 0  , j = reversed.length - 1 ; i < array.length ; i++,j--){
+                reversed[j] = array[i];
          }
 
           return  reversed;
@@ -210,10 +211,10 @@ public class Homework5 {
      * @param array Подадения масив от потребителя за обработка
      */
     public static void findSmallerNumberInArray7(int [] array){
-        int smallerNumber= Integer.MAX_VALUE;
-        for (int i = 0; i <array.length ; i++) {
-            if( array[i]   < smallerNumber){
-                smallerNumber  = array[i];
+        int smallerNumber   = Integer.MAX_VALUE;
+        for (int i = 0  ; i < array.length ; i++) {
+            if( array[i]    < smallerNumber){
+              smallerNumber = array[i];
             }
 
         }
@@ -230,9 +231,9 @@ public class Homework5 {
 
 
             int biggerNum = Integer.MIN_VALUE;
-            for (int i = 0 ; i < array.length ; i++){
-                if(array[i]   > biggerNum){
-                    biggerNum = array[i];
+            for (int i = 0 ; i  < array.length ; i++){
+                if(array[i]     > biggerNum){
+                    biggerNum   = array[i];
 
                 }
 
@@ -263,7 +264,7 @@ public class Homework5 {
         //TODO незавършен
         Random random = new Random();
        // Random rd = new Random(); // creating Random object
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0 ; i < array.length ; i++) {
             array[i] = random.nextInt(); // storing ra
             // ndom integers in an array
             // printing each array element
@@ -349,7 +350,7 @@ public  static void validateInput (int max , int min){
 
         int n = array.length;
         System.out.println("Твоите числа са :");
-        for (int i = 0; i < n; i++) {
+        for (int i = 0 ; i < n ; i++) {
             System.out.print(array[i] + " ");
         }
 
