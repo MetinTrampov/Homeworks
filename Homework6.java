@@ -6,6 +6,10 @@ public class Homework6 {
     static int n;
     static int[] arrayOfNumbers;
 
+    /**
+    * Homework#6
+    * @author Metin Trampov
+    */
     public static void main(String[] args) {
         arrayOfNumbers = new int[n];
         printMenu();
