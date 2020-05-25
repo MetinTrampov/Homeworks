@@ -14,6 +14,10 @@ public class MineRemover {
     public  static int countDisposal            =  3;
     public static void main(String[] args) {
 
+       /**
+       /@author Metin Trampov
+       /@topic HomeworkWeek7
+       */
         String [][] mineBoard = {
                 {START_POSITION,UNREACHABLE_POSITION,UNREACHABLE_POSITION,UNREACHABLE_POSITION,UNREACHABLE_POSITION,UNREACHABLE_POSITION},
                 {UNREACHABLE_POSITION,MINES,UNREACHABLE_POSITION,UNREACHABLE_POSITION,UNREACHABLE_POSITION,MINES},
@@ -30,7 +34,6 @@ public class MineRemover {
             printOurBoard(mineBoard);
 
              int [] cordinates = readInput();
-             int [] target = new int [2] ;
             System.out.printf("От позиция [ %d ,%d ] do [ %d , %d ] \n ",cordinates[0],cordinates[1],cordinates[2],cordinates[3]);
             System.out.println();
             if(mineBoard[cordinates[3]][cordinates[2]].equals(MINES)){
@@ -49,6 +52,11 @@ public class MineRemover {
 
 
     }
+     /**
+     /Принтира борда
+     /@board подадения масив
+     */
+    
     public  static  void printOurBoard(String[][] board) {
         int rolNumbers=0;
         for (int i = 0; i <board.length ; i++) {
@@ -71,6 +79,10 @@ public class MineRemover {
         }
         System.out.println();
     }
+    /**
+     /Чете кординати
+     /
+     */
     public  static  int[] readInput (){
         System.out.print("Въведете  кординати :\n");
         int intCoordinates ;
@@ -127,6 +139,11 @@ public class MineRemover {
          }
         return cord;
     }
+    /**
+     /мести играча
+     /@board подадения масив
+     /@coord подадените кординати
+     */
     public static  void move (String [][] board ,int [] coord) {
         String target = board[coord[3]][coord[2]];
 
