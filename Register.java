@@ -3,8 +3,15 @@ package Demo;
 import java.io.*;
 import java.util.Scanner;
 
+
+
 public class Register {
     public static Scanner scanner = new Scanner(System.in);
+    
+    /**
+    *@author Metin Trampov
+    *Този метод принтира текстовия файл и нищо повече не успях да измисля ....
+    */
     public static void main(String[] args) {
 
 
@@ -28,7 +35,9 @@ public class Register {
 
     }
 
-
+    /**
+    *Метода който принтира подадения файл
+    */
     public static void print (){
         File fileReference = new File("persons/personProperty");
 
