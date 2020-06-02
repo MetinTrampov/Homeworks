@@ -20,14 +20,14 @@ public class Register {
         String in = scanner.nextLine();
 
         switch (in){
-            case "SELECT" : print (); break;
-            case "SELECT{TYPE}=[R]":break;
-            case "SELECT{TYPE}=[R]@{SEX}=[F]":break;
+            case "SELECT" : print ();               break;
+            case "SELECT{TYPE}=[R]":                break;
+            case "SELECT{TYPE}=[R]@{SEX}=[F]":      break;
 
 
 
         }
-        print();
+     
 
 
 
@@ -43,14 +43,14 @@ public class Register {
         File fileReference = new File("persons/personProperty");
 
         try {
-            FileReader file = new FileReader(fileReference);
-            BufferedReader  buffreader = new BufferedReader(file);
+            FileReader file             = new FileReader(fileReference);
+            BufferedReader  buffreader  = new BufferedReader(file);
 
             String fullText;
-            while ((fullText = buffreader.readLine())!=null){
+            while ((fullText            = buffreader.readLine())!=null){
                 System.out.println(fullText);
 
-                String  [] ourLine = fullText.split("@");
+                String  [] ourLine      = fullText.split("@");
                 System.out.println();
             }
 
